@@ -4,7 +4,7 @@
 
 Murmur is a native macOS app that transcribes your voice entirely on your Mac. No audio ever leaves your device when using local models. Dictate into any app, record and transcribe meetings offline, and optionally clean up text with AI.
 
-**Website:** [murmur.nihil.codes](https://murmur.nihil.codes)
+**Website:** [murmur.you](https://murmur.you)
 
 ---
 
@@ -109,17 +109,17 @@ The App Store version is sandboxed — you paste manually from the clipboard.
 
 ## Links
 
-- **Website:** [murmur.nihil.codes](https://murmur.nihil.codes)
-- **Privacy Policy:** [murmur.nihil.codes/privacy.html](https://murmur.nihil.codes/privacy.html)
-- **Terms of Service:** [murmur.nihil.codes/terms.html](https://murmur.nihil.codes/terms.html)
-- **Refund Policy:** [murmur.nihil.codes/refunds.html](https://murmur.nihil.codes/refunds.html)
-- **Contact:** [murmur@nihil.codes](mailto:murmur@nihil.codes)
+- **Website:** [murmur.you](https://murmur.you)
+- **Privacy Policy:** [murmur.you/privacy.html](https://murmur.you/privacy.html)
+- **Terms of Service:** [murmur.you/terms.html](https://murmur.you/terms.html)
+- **Refund Policy:** [murmur.you/refunds.html](https://murmur.you/refunds.html)
+- **Contact:** [hello@murmur.you](mailto:hello@murmur.you)
 
 ---
 
 ## License
 
-Murmur is proprietary software. See [Terms of Service](https://murmur.nihil.codes/terms.html) for usage terms.
+Murmur is proprietary software. See [Terms of Service](https://murmur.you/terms.html) for usage terms.
 
 ---
 
