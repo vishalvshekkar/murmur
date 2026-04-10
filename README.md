@@ -1,90 +1,99 @@
 # Murmur
 
-**On-device voice-to-text and meeting transcription for Mac.**
+**Voice-to-text for Mac. Private by default.**
 
-Murmur is a native macOS app that transcribes your voice entirely on your Mac. No audio ever leaves your device when using local models. Dictate into any app, record and transcribe meetings offline, and optionally clean up text with AI.
+Murmur is a native macOS app for voice-to-text dictation, meeting transcription, voice notes, and teleprompter. Work fully offline with local models, or use cloud transcription with your own API keys. Your data, your choice.
 
-**Website:** [murmur.you](https://murmur.you)
+**Website:** [murmur.you](https://murmur.you) · **Docs:** [murmur.you/docs](https://murmur.you/docs/)
 
 ---
 
 ## Features
 
-### Private by Default
+### Dictate in Every App
 
-Your audio never leaves your Mac when using local models. Transcription happens entirely on-device using Apple's Neural Engine. No server, no upload, no internet required. You can optionally use cloud transcription with your own API keys — your data stays under your control.
+Press a keyboard shortcut, speak, and text appears at your cursor. Works in any app: Slack, Notion, VS Code, your browser, email drafts, anywhere. Three dictation modes:
 
-### System-Wide Dictation
+- **Push-to-talk** — hold to record, release to transcribe
+- **Toggle** — press once to start, again to stop
+- **Auto** — quick tap toggles, longer hold is push-to-talk
 
-Press a keyboard shortcut, speak, and text appears at your cursor. Works in every app — Slack, Notion, VS Code, your browser, email drafts, anywhere. Choose from push-to-talk, toggle, or auto recording modes. Text is pasted directly into the active app or copied to your clipboard.
+Text is pasted directly into the active app or copied to your clipboard. 99 languages with auto-detection.
 
-### Meetings & Notes
+### Context-Aware AI
 
-- **Offline meeting recording** — Record entire meetings locally with automatic chunked transcription
-- **Speaker diarization** — Identify different speakers in your recordings
-- **AI-powered summaries** — Generate key points and action items using local or cloud AI
-- **Voice notes** — Capture quick thoughts with a separate hotkey
-- **Searchable history** — Find any transcription with full-text search
-- **Audio playback** — Listen back to any recording with synchronized transcript
+Murmur detects what app you're using and adapts AI refinement to match. In a code editor, it preserves technical terms. In email, it produces polished prose. It reads browser URLs, window titles, and editor context (project, file, language) to get the tone right. Four permission levels with graceful degradation. Off by default.
+
+### Meetings & Import
+
+Record entire meetings with speaker diarization and automatic chunked transcription. Meetings are saved in 5-minute chunks for crash recovery. A menu bar indicator shows recording status across all apps.
+
+- **AI summaries** with key points and action items
+- **Auto-generated titles** and timestamped transcripts
+- **Import audio/video** files (M4A, MP3, WAV, MP4, MOV, up to 60 min)
+
+### Voice Notes
+
+A separate hotkey for quick voice capture. Notes are saved with audio playback and optional AI refinement. The **AI Librarian** automatically builds a running summary of your notes collection, tracking recurring topics, people, and projects.
+
+### Teleprompter (Beta)
+
+Paste a script and read it while Murmur follows along with your voice. Three modes:
+
+- **Live** — highlights words as you speak in real time
+- **Voice-Activated** — scrolls while you talk, pauses on silence
+- **Auto-Scroll** — moves at a fixed words-per-second rate
 
 ### 30+ Transcription Models
 
-Choose from over 30 model variants optimized for different needs:
-- **Local models** — Multiple Whisper variants, NVIDIA Parakeet, Apple Speech
-- **Cloud models** — OpenAI transcription with your own API key
-- **Benchmark data** — Every model shows real speed and accuracy metrics
-- **Download only what you need** — Models range from 75MB to 3GB
+- **WhisperKit** — multiple Whisper model sizes (tiny to large-v3), 99 languages
+- **NVIDIA Parakeet** — fastest and most accurate for English (V2 and V3)
+- **Apple Speech** — system-managed, no download needed (macOS Tahoe)
+- **OpenAI API** — cloud-based, highest accuracy, requires API key
 
-### 99 Languages
+Every model shows real benchmark data (WER, speed ratings). Download only what you need.
 
-Automatic language detection with support for 99 languages. Switch languages mid-sentence without changing settings, or lock to a specific language.
+### AI Cleanup & Refinement
 
-### Streaming Transcription
+Optional post-processing that fixes punctuation, strips filler words, and adjusts tone. Works with:
 
-See your words appear in real-time as you speak. No waiting for processing — text flows naturally as you talk.
+- **Ollama** — free, local, runs on your Mac
+- **OpenAI** — cloud, requires API key
+- **Cloudflare AI Gateway** — cloud, flexible routing
+- **OpenAI-compatible APIs** — any provider with a compatible endpoint
 
-### Optional AI Cleanup
+### Export & Playback
 
-Turn on AI refinement to automatically:
-- Fix punctuation and grammar
-- Strip filler words (um, uh, like)
-- Adjust tone based on context
-
-Context-aware: preserves technical terms in code editors, cleans up prose in emails. Works with local AI via Ollama or cloud providers like OpenAI. Off by default.
-
-### Context Awareness
-
-The Direct Download version detects what app you're using:
-- **Browser context** — Knows what website you're on
-- **Editor context** — Detects your project and file type
-- **Smart refinement** — AI adjusts its output based on context
+Export transcriptions as **SRT** (subtitles), **WebVTT** (web video), or **timestamped text**. Meeting exports include speaker labels. Play back any recording with seek and speed control (0.5x to 2x).
 
 ### Statistics Dashboard
 
-Track your voice productivity:
-- Time saved vs typing
-- Words dictated
-- Usage patterns
-- Per-app statistics
+Track time saved, words per minute, usage heatmaps, app distribution, streaks, personal records, and AI refinement stats. Filter by source and time range.
+
+### Streaming Transcription
+
+See words appear in real time as you speak. Partial results display during recording so you know it's working.
 
 ---
 
 ## Requirements
 
-- **Apple Silicon** Mac (M1, M2, M3, M4)
-- **macOS 15.0** (Sequoia) or later
+- **Apple Silicon** (M-series) Mac
+- **macOS 15** (Sequoia) or later
+
+> macOS 26 (Tahoe) adds Apple SpeechAnalyzer and Liquid Glass effects. All other features work fully on Sequoia.
 
 ---
 
 ## Download
 
-**[Download Latest Release](https://github.com/vishalvshekkar/murmur/releases/latest)**
+**[Download Murmur 1.3](https://github.com/vishalvshekkar/murmur/releases/latest/download/Murmur-1.3.dmg)** · [Release notes & older versions](https://github.com/vishalvshekkar/murmur/releases)
 
 ### Pricing
 
-- **$29** one-time purchase
-- **7-day free trial** with full access to all features
-- **2 Mac licenses** included with every purchase
+- **$29** one-time purchase, lifetime updates
+- **7-day free trial** with full access, no credit card
+- **2 Mac licenses** included
 - No subscription, no account required
 
 ---
@@ -92,24 +101,33 @@ Track your voice productivity:
 ## Editions
 
 | Feature | Direct Download | App Store |
-|---------|----------------|-----------|
-| On-device transcription | ✓ | ✓ |
-| 99 languages | ✓ | ✓ |
+|---------|:-:|:-:|
+| Local + cloud transcription | ✓ | ✓ |
+| 99 languages, auto-detect | ✓ | ✓ |
 | Streaming results | ✓ | ✓ |
-| Meeting recording | ✓ | ✓ |
+| Meeting recording + diarization | ✓ | ✓ |
+| Voice notes + AI Librarian | ✓ | ✓ |
+| Teleprompter (beta) | ✓ | ✓ |
 | AI refinement | ✓ | ✓ |
+| Export (SRT, WebVTT, text) | ✓ | ✓ |
 | Statistics dashboard | ✓ | ✓ |
 | **Auto-paste to any app** | ✓ | — |
-| **Browser context awareness** | ✓ | — |
-| **Editor context detection** | ✓ | — |
+| **Context-aware AI** | ✓ | — |
 
-The App Store version is sandboxed — you paste manually from the clipboard.
+The App Store version (coming soon) is sandboxed — you paste manually from the clipboard.
+
+---
+
+## Privacy
+
+With local models, your audio stays on your Mac. No server, no upload, no internet required. Cloud models send audio to the provider you choose, using your own API key. Murmur never collects audio, transcription content, or personal data. [Privacy Policy](https://murmur.you/privacy.html)
 
 ---
 
 ## Links
 
 - **Website:** [murmur.you](https://murmur.you)
+- **Help Center:** [murmur.you/docs](https://murmur.you/docs/)
 - **Privacy Policy:** [murmur.you/privacy.html](https://murmur.you/privacy.html)
 - **Terms of Service:** [murmur.you/terms.html](https://murmur.you/terms.html)
 - **Refund Policy:** [murmur.you/refunds.html](https://murmur.you/refunds.html)
@@ -117,10 +135,4 @@ The App Store version is sandboxed — you paste manually from the clipboard.
 
 ---
 
-## License
-
-Murmur is proprietary software. See [Terms of Service](https://murmur.you/terms.html) for usage terms.
-
----
-
-*Built for Apple Silicon.*
+*Built for Apple Silicon. Requires macOS Sequoia or later.*
