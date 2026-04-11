@@ -87,7 +87,7 @@ See words appear in real time as you speak. Partial results display during recor
 
 ## Download
 
-**[Download Murmur 1.3](https://github.com/vishalvshekkar/murmur/releases/latest/download/Murmur-1.3.dmg)** · [Release notes & older versions](https://github.com/vishalvshekkar/murmur/releases)
+**[Download Murmur 1.4](https://github.com/vishalvshekkar/murmur/releases/latest/download/Murmur-1.4.dmg)** · [Release notes & older versions](https://github.com/vishalvshekkar/murmur/releases)
 
 ### Pricing
 
