@@ -24,6 +24,14 @@ Text is pasted directly into the active app or copied to your clipboard. 99 lang
 
 Murmur detects what app you're using and adapts AI refinement to match. In a code editor, it preserves technical terms. In email, it produces polished prose. It reads browser URLs, window titles, and editor context (project, file, language) to get the tone right. Four permission levels with graceful degradation. Off by default.
 
+### Per-App Workflows
+
+Refinement that adapts to the destination. Specialized workflows for Email, Messaging, Code Assistants, Notes & Docs, and Browsers tune tone and formatting per app — professional prose in Mail, casual in Slack, technical terms preserved in VS Code. Build custom workflows with your own app triggers, tone settings, and instructions. A live pipeline preview shows exactly how each dictation will flow, and per-app exception lists skip refinement where you never want it.
+
+### Command Mode
+
+Don't just transcribe — instruct. Speak "write a polite reply declining this meeting" and Murmur generates the text at your cursor instead of transcribing your words. Bind a dedicated hotkey, or tap Shift mid-recording to flip between dictation and command. Generated content respects your per-app workflows, and History shows every command as Instruction → Result.
+
 ### Meetings & Import
 
 Record entire meetings with speaker diarization and automatic chunked transcription. Meetings are saved in 5-minute chunks for crash recovery. A menu bar indicator shows recording status across all apps.
@@ -68,7 +76,7 @@ Export transcriptions as **SRT** (subtitles), **WebVTT** (web video), or **times
 
 ### Statistics Dashboard
 
-Track time saved, words per minute, usage heatmaps, app distribution, streaks, personal records, and AI refinement stats. Filter by source and time range.
+Track time saved, words per minute, usage heatmaps, app distribution, streaks, personal records, AI refinement stats, and workflow & command-mode insights. Filter by source and time range.
 
 ### Streaming Transcription
 
