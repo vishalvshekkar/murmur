@@ -34,11 +34,21 @@ Don't just transcribe — instruct. Speak "write a polite reply declining this m
 
 ### Meetings & Import
 
-Record entire meetings with speaker diarization and automatic chunked transcription. Meetings are saved in 5-minute chunks for crash recovery. A menu bar indicator shows recording status across all apps.
+Record entire meetings with speaker diarization and automatic chunked transcription. Meetings are saved in 5-minute chunks and run through a resumable pipeline — if the app crashes or quits mid-meeting, Murmur offers to recover and picks up from the last completed stage. A menu bar indicator shows recording status across all apps.
 
-- **AI summaries** with key points and action items
+- **Structured AI summaries** — executive overview, key topics, decisions, action items with owners, timeline, key quotes, and open questions
+- **Complete summaries for long meetings** — multi-hour recordings are summarized in full, not just the first stretch
 - **Auto-generated titles** and timestamped transcripts
-- **Import audio/video** files (M4A, MP3, WAV, MP4, MOV, up to 60 min)
+- **Import audio/video** files (M4A, MP3, WAV, MP4, MOV, up to 3 hours)
+
+### Reliable Audio Capture
+
+Murmur rides through microphone changes without dropping a recording. Connect AirPods, unplug a USB mic, or switch inputs mid-recording and dictation, notes, meetings, and teleprompter tracking all keep going.
+
+- **Microphone priority** — rank your mics in a drag-to-reorder ladder; capture uses the highest available and falls back automatically, so connecting AirPods never hijacks dictation
+- **Automatic device switching** — a brief "reacquiring audio" pause instead of a failed recording when the input changes
+- **Recording quality** — dictation and notes are saved at up to 48 kHz for clear playback (transcription still uses 16 kHz, so accuracy is unchanged)
+- **Progressive save** — audio is written to disk before transcription runs, so a transcription failure or crash never loses the recording
 
 ### Voice Notes
 
@@ -49,8 +59,10 @@ A separate hotkey for quick voice capture. Notes are saved with audio playback a
 Paste a script and read it while Murmur follows along with your voice. Three modes:
 
 - **Live** — highlights words as you speak in real time
-- **Voice-Activated** — scrolls while you talk, pauses on silence
-- **Auto-Scroll** — moves at a fixed words-per-second rate
+- **Voice** — scrolls while you talk, pauses on silence (with a mic-threshold calibrator)
+- **Auto** — moves at a fixed words-per-second rate
+
+A **floating panel** sits over any app so you can read on a video call — adjust text size live, pick which monitor it appears on, and **hide it from screen shares** so only you see your script. Tap any line to jump your position, and choose a line-by-line or original script layout.
 
 ### 30+ Transcription Models
 
@@ -72,7 +84,7 @@ Optional post-processing that fixes punctuation, strips filler words, and adjust
 
 ### Export & Playback
 
-Export transcriptions as **SRT** (subtitles), **WebVTT** (web video), or **timestamped text**. Meeting exports include speaker labels. Play back any recording with seek and speed control (0.5x to 2x).
+Export transcriptions as **SRT** (subtitles), **WebVTT** (web video), or **timestamped text**. Meeting exports include speaker labels. Play back any recording with seek and speed control (0.5x to 2x) — dictation and notes are saved at up to 48 kHz, and each recording shows its actual capture quality.
 
 ### Statistics Dashboard
 
@@ -95,7 +107,7 @@ See words appear in real time as you speak. Partial results display during recor
 
 ## Download
 
-**[Download Murmur 1.5](https://github.com/vishalvshekkar/murmur/releases/latest/download/Murmur-1.5.dmg)** · [Release notes & older versions](https://github.com/vishalvshekkar/murmur/releases)
+**[Download Murmur 1.6](https://github.com/vishalvshekkar/murmur/releases/latest/download/Murmur-1.6.dmg)** · [Release notes & older versions](https://github.com/vishalvshekkar/murmur/releases)
 
 ### Pricing
 
