@@ -34,19 +34,23 @@ Don't just transcribe — instruct. Speak "write a polite reply declining this m
 
 ### Meetings & Import
 
-Record entire meetings with speaker diarization and automatic chunked transcription. Meetings are saved in 5-minute chunks for crash recovery. A menu bar indicator shows recording status across all apps.
+Record entire meetings with speaker diarization and automatic chunked transcription. Meetings are saved in crash-safe 5-minute chunks and run through a resumable pipeline — if the app crashes or force-quits, Murmur offers to recover the meeting and picks up from the last completed stage. A menu bar indicator shows recording status across all apps.
 
-- **AI summaries** with key points and action items
+- **AI summaries** with key points and action items — long meetings are summarized in pieces and combined, so the summary covers the whole conversation
 - **Auto-generated titles** and timestamped transcripts
-- **Import audio/video** files (M4A, MP3, WAV, MP4, MOV, up to 60 min)
+- **Import audio/video** files (M4A, MP3, WAV, MP4, MOV, up to 3 hours)
 
 ### Voice Notes
 
 A separate hotkey for quick voice capture. Notes are saved with audio playback and optional AI refinement. The **AI Librarian** automatically builds a running summary of your notes collection, tracking recurring topics, people, and projects.
 
+### Microphone Priority & Recording Quality
+
+Rank your microphones in a drag-to-reorder ladder. Murmur captures from the highest-ranked mic that's available and falls back automatically when one disconnects — connecting AirPods never hijacks dictation again, and your order is remembered by device identity across unplugging and reboots. Recordings survive **microphone changes mid-session**: swap inputs while dictating, taking notes, or in a meeting, and it keeps going after a brief "Reacquiring audio…". Dictation and notes are saved at up to **48 kHz** for clear playback, with per-feature sample-rate and bit-rate control.
+
 ### Teleprompter (Beta)
 
-Paste a script and read it while Murmur follows along with your voice. Three modes:
+Paste a script and read it while Murmur follows along with your voice, in a slim **floating panel** you can **hide from screen shares and recordings** — only you see your script on a video call. Adjust text size live, pick which display it appears on, and choose your script layout and words-per-line. Three modes:
 
 - **Live** — highlights words as you speak in real time
 - **Voice-Activated** — scrolls while you talk, pauses on silence
@@ -95,7 +99,7 @@ See words appear in real time as you speak. Partial results display during recor
 
 ## Download
 
-**[Download Murmur 1.5](https://github.com/vishalvshekkar/murmur/releases/latest/download/Murmur-1.5.dmg)** · [Release notes & older versions](https://github.com/vishalvshekkar/murmur/releases)
+**[Download Murmur 1.7](https://github.com/vishalvshekkar/murmur/releases/latest/download/Murmur-1.7.dmg)** · [Release notes & older versions](https://github.com/vishalvshekkar/murmur/releases)
 
 ### Pricing
 
